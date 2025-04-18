@@ -1,0 +1,251 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+#menu {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 20;
+  width: 100%;
+  height: 130px;
+}
+
+section {
+  height: 100vh;
+}
+.first {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../images/bg_main.png);
+}
+
+nav.liv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 0 20px;
+  max-width: 1288px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+nav.liv a:first-child {
+  width: 164px;
+  height: 29px;
+}
+nav.liv a svg .cls-1 {
+  fill: rgb(255, 255, 255);
+}
+nav.liv ul {
+  width: 70%;
+  display: flex;
+
+  align-items: center;
+}
+nav.liv ul li {
+  padding: 0 20px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+}
+nav.liv ul li:hover {
+  color: #015578;
+  transition: 0.5s;
+}
+nav.liv a:last-child {
+  color: #757476;
+  font-size: 15px;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 20px;
+  padding: 5px 20px;
+  transition: background-color 0.5s, color 0.5s;
+  box-sizing: border-box;
+  text-align: center;
+}
+nav.liv a:last-child:hover {
+  background: #015578;
+  color: #fff;
+}
+#ft {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 35px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #fff;
+}
+.ft_wrapper {
+  max-width: 1288px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.ft_info {
+  display: flex;
+  gap: 20px;
+}
+.main {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+.main_button_label {
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+}
+.main_button {
+  transition: opacity 0.5s;
+  text-align: center;
+  cursor: pointer;
+  background: #fff;
+  border-radius: 20px;
+  padding: 7px 30px;
+  font-weight: 500;
+  color: #757476;
+}
+.main_button:hover {
+  background: #015578;
+  transition: 0.5s;
+  color: #fff;
+}
+.main_icon {
+  display: flex;
+}
+.main_icon li {
+  width: 220px;
+  padding: 0 30px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+.main_icon li::after {
+  content: "";
+  height: 100px;
+  display: block;
+  border-left: 1px solid #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main_icon li:first-child:after {
+  display: none;
+}
+.second {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.second .background-blur {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../images/bg_main.png);
+  filter: blur(10px) brightness(70%);
+  z-index: -1;
+}
+.main_select {
+  width: 100%;
+  height: 100%;
+  max-width: 1288px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ccc;
+}
+.main_select > ul {
+  flex: 1;
+}
+.main_select .select {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.select {
+  cursor: pointer;
+}
+.select:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+.select .one {
+  font-size: 16px;
+}
+.select .one ul li:nth-child(2) {
+  margin: 10px 0;
+}
+.select .one ul li.line {
+  font-size: 20px;
+  display: inline-block;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 9px 15px;
+}
+.select .two > img {
+  width: 546px;
+  object-fit: cover;
+  filter: brightness(1) opacity(0.5);
+}
+.select:hover .two > img {
+  filter: none;
+}
+.select .three {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.select .three li:nth-child(2) {
+  font-size: 40px;
+  font-weight: 800;
+  margin-top: 5px;
+}
+.select:hover .four img {
+  filter: grayscale(100%) brightness(0.4);
+}
+.select .four {
+  width: 71px;
+  height: 75px;
+  background-image: url(https://officelookbook.co.kr/theme/livart/img/icon_main_check.png);
+  transition: 0.5s;
+  margin: 0 auto;
+}
+
+.select:hover .four {
+  background-image: url(https://officelookbook.co.kr/theme/livart/img/icon_main_checked.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
