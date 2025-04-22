@@ -275,11 +275,78 @@ nav.liv a:last-child.on:hover {
   background-size: 100%;
 }
 #secLast {
+  width: 100%;
+  height: 3000px;
+  max-width: 1288px;
+  margin: 0 auto;
+  display: flex;
+
   color: black;
-  overflow-y: scroll;
-  background-color: #ccc;
+  /* overflow-y: scroll; */
+  text-align: center;
 }
 #secLast .inner {
   width: 100%;
-  height: 3000px;
+
+  padding-top: 250px;
+  box-sizing: border-box;
+}
+#secLast .inner .title {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#secLast .inner .title svg {
+  width: 164px;
+  height: 29px;
+  fill: #015578;
+}
+#secLast .inner .title > div {
+  font-weight: 700;
+  font-size: 40px;
+  color: #015578;
+}
+#secLast .inner .subtitle {
+  font-size: 20px;
+  font-weight: 500;
+}
+#secLast .inner .wrapper {
+  border-bottom: 1px solid #ccc;
+  padding-top: 50px;
+}
+#secLast .inner .wrapper .filter {
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 20px 0 10px;
+  cursor: pointer;
+  color: #ccc;
+}
+#secLast .inner .step_wrapper {
+  width: 100%;
+}
+
+#secLast .inner .step_title {
+  color: #282828;
+  font-size: 43px;
+  font-weight: 700;
+}
+#secLast .inner .step_personnel {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+#secLast .inner .step_item {
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 30px;
 }
