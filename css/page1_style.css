@@ -13,7 +13,7 @@ a {
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 #secLast {
   width: 100%;
@@ -32,15 +32,18 @@ body {
   gap: 30px;
   box-sizing: border-box;
 }
-#secLast .inner .title {
+#secLast .inner .title,
+#item .title svg {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
+
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-#secLast .inner .title svg {
+#secLast .inner .title svg,
+#item .title svg {
   width: 164px;
   height: 29px;
   fill: #015578;
@@ -90,4 +93,37 @@ body {
   border: 2px solid #ccc;
   border-radius: 20px;
   padding: 30px;
+}
+#item {
+  background: #eee;
+}
+#item .tailoring_content_wrapper_bg {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+#item .tailoring_ui ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#item .tailoring_ui li {
+  overflow: hidden;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+#item .tailoring_ui img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#item .tailoring_ui h3 {
+  padding: 10px;
+  font-size: 1rem;
+  text-align: left;
 }
