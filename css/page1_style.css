@@ -96,24 +96,54 @@ body {
 }
 #item {
   background: #eee;
+  margin-top: 40px;
+  padding-top: 40px;
 }
 #item .tailoring_content_wrapper_bg {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   text-align: center;
+  position: relative;
 }
-#item .tailoring_content_wrapper_bg svg {
-  margin: 0 auto;
-  text-align: center;
+#item .tailoring_content_wrapper_bg > img {
+  width: 57px;
+  height: 36px;
+  position: absolute;
+  left: 48%;
+  top: -40px;
+}
+#item .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#item .title svg {
+  width: 124px;
+  height: 22px;
+  fill: #015578; /* SVG 색상 설정 */
+}
+#item .pick-text {
+  font-size: 29px;
+  font-weight: bold;
+  color: #015578;
+  line-height: 1;
+  align-items: center;
+}
+#item .tailoring {
+  font-size: 22px;
+  color: #737e86;
+  margin-top: 10px;
 }
 #item .tailoring_ui ul {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   list-style: none;
-  padding: 0;
+  padding: 50px 0;
   margin: 0;
+  box-sizing: border-box;
 }
 #item .tailoring_ui li {
   overflow: hidden;
@@ -140,12 +170,14 @@ body {
   margin-top: 20px;
   text-align: right;
   position: relative;
+  padding-left: 40px;
 }
 #item .tailoring_ui .item_button a {
   font-size: 1.05rem;
-
   font-weight: 700;
   color: #015578;
+  padding-right: 30px;
+  display: inline-block;
 }
 #item .tailoring_ui .item_button img {
   width: 24px;
