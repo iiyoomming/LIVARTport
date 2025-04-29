@@ -10,3 +10,70 @@ a {
   text-decoration: none;
   color: #000;
 }
+.why_wrapper {
+  max-width: 1246px;
+  margin: 200px auto 0;
+}
+.why_title {
+  width: 100%;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #282828;
+  text-align: center;
+}
+.why_title span {
+  color: #015578;
+}
+.why_main {
+  max-width: 1246px;
+  margin: 100px auto 0;
+  display: flex;
+}
+.why_main .main .main_text {
+  min-width: 270px;
+  font-size: 1.55rem;
+  font-weight: 900;
+  color: #015578;
+}
+.why_main .main svg {
+  fill: #015578;
+  width: 209px;
+  height: 37px;
+  margin-top: 15px;
+}
+.why_main .main .main_list {
+  margin-top: 70px;
+  margin-right: 20px;
+}
+.why_main .main .main_list li {
+  border-top: 2px solid #015578;
+  padding: 20px 0 60px;
+}
+.why_main .main .main_list .title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #015578;
+}
+.why_main .main .main_list .title span {
+  font-weight: 600;
+  color: #282828;
+}
+.why_main .main .main_list .desc {
+  font-size: 17px;
+  color: #282828;
+  margin-top: 10px;
+}
+.why_main .main_image {
+  width: 100%;
+}
+.why_main .main_image img {
+  width: 929px;
+}
+.why_sub {
+  width: 100%;
+  background: url(../images/bg_why_bottom.png) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 200px 0;
+}
