@@ -72,8 +72,45 @@ a {
 }
 .why_sub {
   width: 100%;
-  background: url(../images/bg_why_bottom.png) no-repeat;
+  background-image: url(../images/bg_why_bottom.png);
   background-position: center center;
   background-size: cover;
   padding: 200px 0;
+}
+.why_sub .sub_title {
+  max-width: 930px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.why_sub .sub_title svg {
+  fill: #015578;
+  width: 193px;
+  height: 37px;
+}
+.why_sub .sub_title .title_text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #015578;
+}
+.why_sub .sub_subtitle,
+.sub_description {
+  font-size: 1.3rem;
+  color: #282828;
+  font-weight: 600;
+  text-align: center;
+}
+.why_sub .sub_point {
+  max-width: 930px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.why_sub .sub_description {
+  margin-top: 50px;
+}
+.why_sub .sub_description span {
+  font-weight: 800;
 }
