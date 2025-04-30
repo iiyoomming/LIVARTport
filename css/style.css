@@ -31,10 +31,13 @@ section.box1 {
 .first {
   width: 100%;
   height: 100%;
+  /* max-width: 1920px;
+  margin: 0 auto; */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   background-image: url(../images/bg_main.png);
+  /* filter: blur(0px) brightness(100%) drop-shadow(rgb(0, 0, 0) 0px 0px 10px);*/
 }
 #menu {
   position: fixed;
@@ -75,11 +78,15 @@ nav.liv a svg .cls-1 {
 nav.liv ul {
   width: 70%;
   display: flex;
+  /* margin-top: 20px; */
   align-items: center;
+  /* margin-left: 50px; */
 }
 nav.liv ul li {
+  /* padding: 20px; */
   padding: 0 20px;
   font-weight: 600;
+  /* color: #fff; */
   cursor: pointer;
 }
 nav.liv ul li:hover {
@@ -106,30 +113,10 @@ nav.liv a:last-child.on:hover {
   background: #ccc;
   color: #fff;
 }
-#ft {
-  width: 100%;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 35px;
-  margin: 0 auto;
-  font-size: 12px;
-  color: #fff;
-}
-.ft_wrapper {
-  max-width: 1288px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 20px;
-}
-.ft_info {
-  display: flex;
-  gap: 20px;
-}
 .main {
   width: 100%;
   height: 100%;
+  /* margin-top: 130px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -138,11 +125,13 @@ nav.liv a:last-child.on:hover {
   gap: 40px;
 }
 .main_button_label {
+  /* margin-top: 50px; */
   font-weight: 500;
   font-size: 16px;
   color: #fff;
 }
 .main_button {
+  /* margin-top: 10px; */
   transition: opacity 0.5s;
   text-align: center;
   cursor: pointer;
@@ -159,6 +148,7 @@ nav.liv a:last-child.on:hover {
 }
 .main_icon {
   display: flex;
+  /* margin-top: 130px; */
 }
 .main_icon li {
   width: 220px;
@@ -275,31 +265,26 @@ nav.liv a:last-child.on:hover {
   background-size: 100%;
 }
 #secLast {
-  width: 100%;
-  height: 3000px;
-  max-width: 1288px;
-  margin: 0 auto;
-  display: flex;
-
   color: black;
-  /* overflow-y: scroll; */
-  text-align: center;
+  overflow-y: scroll;
 }
 #secLast .inner {
   width: 100%;
-
-  padding-top: 250px;
-  box-sizing: border-box;
+  padding-top: 150px;
+  /* height: 3000px; */
 }
-#secLast .inner .title {
+#secLast .inner .title,
+#item .title svg {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
+
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
-#secLast .inner .title svg {
+#secLast .inner .title svg,
+#item .title svg {
   width: 164px;
   height: 29px;
   fill: #015578;
@@ -349,4 +334,127 @@ nav.liv a:last-child.on:hover {
   border: 2px solid #ccc;
   border-radius: 20px;
   padding: 30px;
+}
+#item {
+  background: #eee;
+  margin-top: 40px;
+  padding-top: 40px;
+  position: relative;
+}
+#item .shadowBg {
+  width: 100%;
+  height: 35px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0);
+  position: absolute;
+  top: -35px;
+}
+#item .tailoring_content_wrapper_bg {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  filter: drop-shadow(0px 3px 3px rgba(0, 0, 0, 0.1));
+}
+#item .tailoring_content_wrapper_bg > img {
+  width: 57px;
+  height: 36px;
+  position: absolute;
+  left: 48%;
+  top: -42px;
+  z-index: 2;
+}
+#item .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#item .title svg {
+  width: 124px;
+  height: 22px;
+  fill: #015578; /* SVG 색상 설정 */
+}
+#item .pick-text {
+  font-size: 29px;
+  font-weight: bold;
+  color: #015578;
+  line-height: 1;
+  align-items: center;
+}
+#item .tailoring {
+  font-size: 22px;
+  color: #737e86;
+  margin-top: 10px;
+}
+#item .tailoring_ui ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 50px 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#item .tailoring_ui li {
+  overflow: hidden;
+  text-align: center;
+  background: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#item .tailoring_ui img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#item .tailoring_ui h3 {
+  padding: 10px;
+  font-size: 1rem;
+  text-align: left;
+  word-wrap: normal;
+  word-break: keep-all;
+  margin-top: 20px;
+}
+#item .tailoring_ui .item_button {
+  margin-top: 20px;
+  text-align: right;
+  position: relative;
+  padding-left: 40px;
+}
+#item .tailoring_ui .item_button a {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #015578;
+  padding-right: 30px;
+  display: inline-block;
+}
+#item .tailoring_ui .item_button img {
+  width: 24px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+#ft {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 35px;
+  margin: 0 auto;
+  font-size: 12px;
+  color: #fff;
+}
+.ft_wrapper {
+  max-width: 1288px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.ft_info {
+  display: flex;
+  gap: 20px;
 }

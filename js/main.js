@@ -18,16 +18,19 @@ function scrollToIndex(index, callback) {
   }, 800);
 }
 let svg = document.querySelectorAll("#menu .title svg .cls-1");
+// 메뉴 토글 관리
 function updateMenu(index) {
   if (index >= 2) {
     menu.classList.add("on");
     document.querySelector(".contact").classList.add("on");
+    document.querySelector("#ft").style.display = "none";
     svg.forEach(function (v) {
       v.classList.add("on");
     });
   } else {
     menu.classList.remove("on");
     document.querySelector(".contact").classList.remove("on");
+    document.querySelector("#ft").style.display = "block";
     svg.forEach(function (v) {
       v.classList.remove("on");
     });
@@ -56,7 +59,6 @@ window.addEventListener(
         scrollToIndex(currentIndex, () => {
           isAnimating = false;
           updateMenu(currentIndex);
-          showCurrentIndex();
         });
       }
 
@@ -80,7 +82,6 @@ window.addEventListener(
     scrollToIndex(currentIndex, () => {
       isAnimating = false;
       updateMenu(currentIndex);
-      showCurrentIndex();
     });
   },
   { passive: false }
