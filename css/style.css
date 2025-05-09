@@ -89,11 +89,12 @@ nav.liv ul li {
   /* color: #fff; */
   cursor: pointer;
 }
-nav.liv ul li:hover {
+nav.liv ul li:hover,
+nav.liv ul li:hover a {
   color: #015578;
   transition: 0.5s;
 }
-nav.liv a:last-child {
+nav.liv a.contact {
   color: #757476;
   font-size: 15px;
   font-weight: 500;
